@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import ChatBot from './components/common/ChatBot';
@@ -85,9 +85,9 @@ function App() {
       <LanguageProvider>
         <AuthProvider>
           <CartProvider>
-            <BrowserRouter>
+            <HashRouter>
               <AppContent />
-            </BrowserRouter>
+            </HashRouter>
           </CartProvider>
         </AuthProvider>
       </LanguageProvider>
