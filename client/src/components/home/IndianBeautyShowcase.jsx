@@ -9,12 +9,12 @@ const beautyLooks = [
     title: 'Imperial Kundan Bridal Airbrush',
     style: 'Royal North Indian Wedding',
     image: 'https://images.pexels.com/photos/29368881/pexels-photo-29368881.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    glowType: '24-Hr Fair Dewy Porcelain Skin',
+    glowType: '24-Hr Dewy Porcelain Glass Skin',
     duration: '210 mins',
     price: 14999,
     rating: 5.0,
     tags: ['HD Airbrush', 'Kundan Draping', 'Mink Lashes'],
-    desc: 'Bespoke bridal styling crafted for 4K video with fair luminous foundation, ruby bindi, and heavy kundan jewelry.'
+    desc: 'Bespoke bridal styling crafted for 4K video with luminous HD foundation, ruby bindi, and heavy kundan jewelry.'
   },
   {
     id: 2,
@@ -26,14 +26,14 @@ const beautyLooks = [
     price: 12999,
     rating: 4.99,
     tags: ['Temple Jewelry', 'Jasmine Gajra', 'Dewy Highlights'],
-    desc: 'Timeless temple bridal elegance with fair golden highlights, traditional poola jada hair styling, and royal silk saree draping.'
+    desc: 'Timeless temple bridal elegance with radiant golden highlights, traditional poola jada hair styling, and royal silk saree draping.'
   },
   {
     id: 3,
     title: '24K Kashmiri Saffron Hydra-Facial',
     style: 'Pure Skin Cellular Radiance',
     image: 'https://images.pexels.com/photos/15416958/pexels-photo-15416958.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    glowType: 'Zero-Pigmentation Chamakta Glass Skin',
+    glowType: 'Luminous Crystal Glass Skin',
     duration: '75 mins',
     price: 2799,
     rating: 4.98,
@@ -43,7 +43,7 @@ const beautyLooks = [
   {
     id: 4,
     title: 'Botanical Keratin Indian Silk Gloss',
-    style: 'Lustrous Radiant Fair Complexion & Tresses',
+    style: 'Lustrous Radiant Glow & Silk Tresses',
     image: 'https://images.pexels.com/photos/29368877/pexels-photo-29368877.jpeg?auto=compress&cs=tinysrgb&w=1200',
     glowType: '5-Month Mirror Shine & Crystal Glow',
     duration: '150 mins',
@@ -69,7 +69,7 @@ const IndianBeautyShowcase = () => {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 dark:bg-amber-950/60 border border-amber-300 dark:border-amber-600 text-amber-700 dark:text-amber-300 text-xs font-black uppercase tracking-wider mb-3 shadow-sm">
             <Crown className="w-4 h-4 text-amber-600 dark:text-amber-400" />
-            <span>Fair & Chamakta Indian Radiance Lookbook</span>
+            <span>Radiant Indian Elegance Lookbook</span>
           </div>
           <h2 className="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white leading-tight">
             Celebrated Indian Brides &{' '}
@@ -78,7 +78,7 @@ const IndianBeautyShowcase = () => {
             </span>
           </h2>
           <p className="mt-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg">
-            Immerse yourself in authentic Indian luxury. Each bridal look and skincare treatment is customized to deliver fair, illuminated, high-definition radiance.
+            Immerse yourself in authentic Indian luxury. Each bridal look and skincare treatment is customized to deliver luminous, illuminated, high-definition radiance.
           </p>
         </div>
 

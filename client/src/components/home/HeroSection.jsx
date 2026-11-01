@@ -26,7 +26,7 @@ const radiantLooks = [
     image: 'https://images.pexels.com/photos/29368881/pexels-photo-29368881.jpeg?auto=compress&cs=tinysrgb&w=1200',
     glowScore: '99.8%',
     badge: '👑 Royal Bride',
-    desc: 'Transfer-free HD airbrush with authentic temple Kundan draping and fair luminous golden glow.'
+    desc: 'Transfer-free HD airbrush with authentic temple Kundan draping and radiant golden luminescence.'
   },
   {
     id: 'saffron-glow',
@@ -53,7 +53,7 @@ const radiantLooks = [
     image: 'https://images.pexels.com/photos/15416958/pexels-photo-15416958.jpeg?auto=compress&cs=tinysrgb&w=1200',
     glowScore: '99.9%',
     badge: '🌸 Salon Glow',
-    desc: 'Zero-sunburn, fair de-pigmented hydration with pure 24K gold foil and organic Kashmiri saffron.'
+    desc: 'Deep cellular hydration infused with pure 24K gold foil, herbal antioxidants, and organic Kashmiri saffron.'
   }
 ];
 
@@ -84,15 +84,15 @@ const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="font-serif font-black text-4xl sm:text-5xl xl:text-6xl text-slate-900 dark:text-white leading-[1.12]">
-              Fair, Chamakta{' '}
+              Radiant & Luminous{' '}
               <span className="block mt-1 bg-gradient-to-r from-amber-500 via-rose-500 to-pink-600 bg-clip-text text-transparent drop-shadow-sm">
-                Glowing Radiance
+                Glowing Elegance
               </span>
             </h1>
 
             {/* Description */}
             <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base lg:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-              Transform your aura with Bangalore's most celebrated beauty sanctuary. Experience fair luminous glass skin with 24K Kashmiri saffron hydra facials, royal Kundan bridal HD airbrush couture, and botanical keratin silk therapies.
+              Transform your aura with Bangalore's most celebrated beauty sanctuary. Experience radiant glass skin with 24K Kashmiri saffron hydra facials, royal Kundan bridal HD airbrush couture, and botanical keratin silk therapies.
             </p>
 
             {/* CTA Buttons */}
@@ -149,7 +149,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Column (7 cols on xl, 6 on lg): UNSUPPRESSED 3D COSMETIC STAGE + FAIR GLOWING INDIAN BEAUTY SHOWCASE */}
+          {/* Right Column (7 cols on xl, 6 on lg): UNSUPPRESSED 3D COSMETIC STAGE + RADIANT GLOWING INDIAN BEAUTY SHOWCASE */}
           <div className="lg:col-span-6 xl:col-span-7 relative">
             
             {/* Top Interactive Mode Switcher Pill */}
@@ -165,7 +165,7 @@ const HeroSection = () => {
                   }`}
                 >
                   <Sparkles className="w-3.5 h-3.5" />
-                  <span>3D + Chamakta Glow</span>
+                  <span>3D & Radiant Glow</span>
                 </button>
 
                 <button
@@ -202,11 +202,11 @@ const HeroSection = () => {
               {/* Shimmer Border Light Effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-amber-400/10 via-transparent to-pink-500/10 pointer-events-none" />
 
-              {/* ----------------- MODE 1: INTEGRATED (DUAL 3D + FAIR GLOWING BRIDE CARD) ----------------- */}
+              {/* ----------------- MODE 1: INTEGRATED (DUAL 3D + RADIANT GLOWING BRIDE CARD) ----------------- */}
               {activeTab === 'integrated' && (
                 <div className="relative w-full h-[520px] sm:h-[580px] p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-6">
                   
-                  {/* Left inside card: Fair Glowing Indian Bride Photo in 3D Tilt Card */}
+                  {/* Left inside card: Radiant Glowing Indian Bride Photo in 3D Tilt Card */}
                   <div className="w-full sm:w-[48%] h-full relative z-20 flex flex-col justify-between">
                     <CardTilt3D className="w-full h-full">
                       <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-300/90 group">
@@ -349,7 +349,7 @@ const HeroSection = () => {
                     </span>
                   </div>
 
-                  {/* Full Size Fair Glowing Bride Portrait */}
+                  {/* Full Size Radiant Glowing Bride Portrait */}
                   <div className="relative flex-1 my-3 rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-300/90 group">
                     <img
                       src={selectedLook.image}

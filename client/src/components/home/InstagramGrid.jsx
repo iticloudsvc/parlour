@@ -53,7 +53,7 @@ const InstagramGrid = () => {
             Real Indian Brides & Everyday Angels
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm mt-2">
-            Explore daily transformations, wedding trials, and fair glowing skin journeys on our official Instagram.
+            Explore daily transformations, wedding trials, and radiant glowing skin journeys on our official Instagram.
           </p>
         </div>
 

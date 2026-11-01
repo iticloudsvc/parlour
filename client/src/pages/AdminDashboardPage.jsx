@@ -100,7 +100,7 @@ const AdminDashboardPage = () => {
             Administrator Access Required
           </h2>
           <p className="text-xs text-slate-500 leading-relaxed">
-            This portal is restricted to Glamour Beauty Studio directors and managers. Please sign in with administrator credentials.
+            This portal is restricted to Glow Like Angel directors and managers. Please sign in with administrator credentials.
           </p>
           <div className="pt-2 space-y-3">
             <button

@@ -317,7 +317,7 @@ export const api = {
     if (q.includes('bridal') || q.includes('dulhan') || q.includes('wedding') || q.includes('shaadi')) {
       reply = '👑 **Royal Indian Bridal Couture at Glow Like Angel:**\nOur Imperial Airbrush package features sweat-proof 24-hr transfer-free foundation, 24K pure Kashmiri saffron pre-bridal glow facial, authentic Kundan/Temple jewelry setting, and designer lehenga draping. Prices start at ₹14,999. Would you like to book a complimentary trial consultation?';
     } else if (q.includes('facial') || q.includes('skin') || q.includes('glow') || q.includes('de-tan')) {
-      reply = '✨ **24K Saffron Hydra-Glow Facial:**\nOur signature 9-step clinical treatment uses ultrasound vortex pore vacuuming infused with organic Kashmiri saffron peptides and a 24K pure gold sheet mask. It eliminates sun tanning and reveals fair porcelain glass skin. Session time: 75 mins (₹2,799).';
+      reply = '✨ **24K Saffron Hydra-Glow Facial:**\nOur signature 9-step clinical treatment uses ultrasound vortex pore vacuuming infused with organic Kashmiri saffron peptides and a 24K pure gold sheet mask. It eliminates sun tanning and reveals radiant porcelain glass skin. Session time: 75 mins (₹2,799).';
     } else if (q.includes('hair') || q.includes('keratin') || q.includes('smoothening') || q.includes('frizz')) {
       reply = '💇‍♀️ **Botanical Keratin Silk Smoothening:**\n100% Formaldehyde-free organic plant proteins combined with cold-pressed Moroccan argan oil. Guarantees mirror-like gloss and zero tropical frizz for up to 5 months. Special offer at ₹3,499.';
     } else if (q.includes('book') || q.includes('appointment') || q.includes('time') || q.includes('slot')) {

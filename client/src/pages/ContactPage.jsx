@@ -301,7 +301,7 @@ const ContactPage = () => {
             </a>
           </div>
           <iframe
-            title="Glamour Beauty Studio Location Map"
+            title="Glow Like Angel Location Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9856425313936!2d77.60803447589255!3d12.972797914856952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1681a9807567%3A0x67396a84f3e580e0!2sMahatma%20Gandhi%20Rd%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
             width="100%"
             height="380"

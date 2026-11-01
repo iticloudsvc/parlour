@@ -186,7 +186,7 @@ const BlogPage = () => {
                 </p>
                 <p>{readingBlog.content}</p>
                 <p>
-                  At Glamour Beauty Studio Bangalore, every treatment protocol is designed to balance active biochemical nourishment with cellular preservation. Whether you visit us for a monthly de-tan hydra facial or full bridal couture preparation, our master estheticians formulate a personalized regimen suited specifically to your dermal profile.
+                  At Glow Like Angel Bangalore, every treatment protocol is designed to balance active biochemical nourishment with cellular preservation. Whether you visit us for a monthly de-tan hydra facial or full bridal couture preparation, our master estheticians formulate a personalized regimen suited specifically to your dermal profile.
                 </p>
 
                 <div className="p-4 rounded-2xl bg-amber-50 dark:bg-slate-900 border border-amber-200 dark:border-slate-800 text-xs space-y-2 mt-4">
