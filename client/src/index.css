@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Custom 3D & Luxury Classes */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* 3D Glassmorphism */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.dark .glass-nav {
+  background: rgba(18, 18, 36, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(236, 72, 153, 0.2);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.dark .glass-card {
+  background: rgba(26, 26, 46, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(236, 72, 153, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* 3D Push Button Effect */
+.btn-3d {
+  transition: all 0.15s ease-in-out;
+  transform: translateY(0);
+  box-shadow: 0 5px 0 #b38612, 0 10px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #b38612, 0 14px 20px rgba(212, 175, 55, 0.35);
+}
+
+.btn-3d:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #b38612, 0 5px 10px rgba(212, 175, 55, 0.2);
+}
+
+.btn-3d-pink {
+  transition: all 0.15s ease-in-out;
+  transform: translateY(0);
+  box-shadow: 0 5px 0 #9d174d, 0 10px 15px rgba(236, 72, 153, 0.3);
+}
+
+.btn-3d-pink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #9d174d, 0 14px 20px rgba(236, 72, 153, 0.35);
+}
+
+.btn-3d-pink:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #9d174d, 0 5px 10px rgba(236, 72, 153, 0.2);
+}
+
+/* Gold Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #e4b343 0%, #d4af37 50%, #996515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-gradient-text {
+  background: linear-gradient(135deg, #f43f5e 0%, #ec4899 50%, #d946ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF0F5;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #121224;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 6px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #ec4899;
+}
