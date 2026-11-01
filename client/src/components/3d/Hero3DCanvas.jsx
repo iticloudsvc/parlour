@@ -219,17 +219,45 @@ const Hero3DCanvas = () => {
       pinkPointLight.position.y = y * 3;
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
+    // Touch interaction for mobile devices
+    const handleTouchMove = (e) => {
+      if (!e.touches || e.touches.length === 0) return;
+      const touch = e.touches[0];
+      const rect = container.getBoundingClientRect();
+      const x = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
+      const y = -(((touch.clientY - rect.top) / rect.height) * 2 - 1);
+      targetMouseX = x * 1.0;
+      targetMouseY = y * 1.0;
 
-    // Resize Handler
+      pinkPointLight.position.x = x * 4;
+      pinkPointLight.position.y = y * 3;
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    container.addEventListener('touchmove', handleTouchMove, { passive: true });
+    container.addEventListener('touchstart', handleTouchMove, { passive: true });
+
+    // Resize Handler with responsive camera framing
     const handleResize = () => {
-      if (!container) return;
+      if (!container || container.clientHeight === 0) return;
+      const mobile = container.clientWidth < 640;
       camera.aspect = container.clientWidth / container.clientHeight;
+      camera.position.z = mobile ? 8.2 : 9.0;
+      camera.position.y = mobile ? 0.9 : 1.2;
       camera.updateProjectionMatrix();
       renderer.setSize(container.clientWidth, container.clientHeight);
     };
 
     window.addEventListener('resize', handleResize);
+    
+    // Robust ResizeObserver for instantaneous dimension tracking
+    let resizeObserver = null;
+    if (typeof ResizeObserver !== 'undefined') {
+      resizeObserver = new ResizeObserver(() => {
+        handleResize();
+      });
+      resizeObserver.observe(container);
+    }
 
     // Animation Loop
     let clock = new THREE.Clock();
@@ -274,7 +302,10 @@ const Hero3DCanvas = () => {
     // Cleanup
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      container.removeEventListener('touchmove', handleTouchMove);
+      container.removeEventListener('touchstart', handleTouchMove);
       window.removeEventListener('resize', handleResize);
+      if (resizeObserver) resizeObserver.disconnect();
       cancelAnimationFrame(animationFrameId);
       if (renderer.domElement && container.contains(renderer.domElement)) {
         container.removeChild(renderer.domElement);
@@ -286,8 +317,8 @@ const Hero3DCanvas = () => {
   return (
     <div
       ref={mountRef}
-      className="w-full h-full min-h-[460px] md:min-h-[580px] cursor-grab active:cursor-grabbing relative z-10"
-      title="Interactive 3D Beauty Elements - Move your cursor to rotate!"
+      className="w-full h-full min-h-0 cursor-grab active:cursor-grabbing relative z-10 touch-none"
+      title="Interactive 3D Beauty Elements - Touch or move to rotate!"
     />
   );
 };

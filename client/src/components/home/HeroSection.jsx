@@ -197,18 +197,18 @@ const HeroSection = () => {
             </div>
 
             {/* Main Visual Stage Frame */}
-            <div className="relative w-full rounded-3xl overflow-hidden bg-gradient-to-br from-white/90 via-amber-50/50 to-pink-50/70 dark:from-[#18182e] dark:via-[#1e1e38] dark:to-[#141428] border-2 border-amber-300/80 dark:border-pink-500/40 shadow-2xl backdrop-blur-xl min-h-[480px] sm:min-h-[550px]">
+            <div className="relative w-full rounded-3xl overflow-hidden bg-gradient-to-br from-white/90 via-amber-50/50 to-pink-50/70 dark:from-[#18182e] dark:via-[#1e1e38] dark:to-[#141428] border-2 border-amber-300/80 dark:border-pink-500/40 shadow-2xl backdrop-blur-xl min-h-[540px] sm:min-h-[550px]">
               
               {/* Shimmer Border Light Effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-amber-400/10 via-transparent to-pink-500/10 pointer-events-none" />
 
               {/* ----------------- MODE 1: INTEGRATED (DUAL 3D + RADIANT GLOWING BRIDE CARD) ----------------- */}
               {activeTab === 'integrated' && (
-                <div className="relative w-full h-[520px] sm:h-[580px] p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-6">
+                <div className="relative w-full h-auto sm:h-[580px] p-3.5 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
                   
                   {/* Left inside card: Radiant Glowing Indian Bride Photo in 3D Tilt Card */}
-                  <div className="w-full sm:w-[48%] h-full relative z-20 flex flex-col justify-between">
-                    <CardTilt3D className="w-full h-full">
+                  <div className="w-full sm:w-[48%] h-auto sm:h-full relative z-20 flex flex-col justify-between">
+                    <CardTilt3D className="w-full h-[250px] sm:h-full">
                       <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-300/90 group">
                         <img
                           src={selectedLook.image}
@@ -220,24 +220,24 @@ const HeroSection = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-pink-950/80 via-transparent to-amber-200/20" />
 
                         {/* Top floating pill */}
-                        <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
-                          <span className="px-2.5 py-1 rounded-full bg-white/95 text-amber-900 font-black text-[11px] shadow-md border border-amber-300 flex items-center gap-1">
+                        <div className="absolute top-2.5 left-2.5 right-2.5 sm:top-3 sm:left-3 sm:right-3 flex items-center justify-between">
+                          <span className="px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full bg-white/95 text-amber-900 font-black text-[10px] sm:text-[11px] shadow-md border border-amber-300 flex items-center gap-1">
                             <Crown className="w-3 h-3 text-amber-600" />
                             {selectedLook.badge}
                           </span>
-                          <span className="px-2.5 py-1 rounded-full bg-emerald-500/95 text-white font-extrabold text-[11px] shadow-md flex items-center gap-1">
+                          <span className="px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full bg-emerald-500/95 text-white font-extrabold text-[10px] sm:text-[11px] shadow-md flex items-center gap-1">
                             <Sparkles className="w-3 h-3" />
                             {selectedLook.glowScore} Glow
                           </span>
                         </div>
 
                         {/* Bottom Info on Image */}
-                        <div className="absolute bottom-3 left-3 right-3 text-white p-2.5 rounded-xl bg-black/40 backdrop-blur-md border border-white/20">
-                          <p className="text-xs font-black text-amber-300 flex items-center gap-1">
+                        <div className="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3 sm:left-3 sm:right-3 text-white p-2 sm:p-2.5 rounded-xl bg-black/45 backdrop-blur-md border border-white/20">
+                          <p className="text-[11px] sm:text-xs font-black text-amber-300 flex items-center gap-1">
                             <Flame className="w-3.5 h-3.5 text-amber-400" />
                             {selectedLook.title}
                           </p>
-                          <p className="text-[10px] text-pink-100 mt-0.5 line-clamp-2">
+                          <p className="text-[9px] sm:text-[10px] text-pink-100 mt-0.5 line-clamp-1 sm:line-clamp-2">
                             {selectedLook.desc}
                           </p>
                         </div>
@@ -251,7 +251,7 @@ const HeroSection = () => {
                           key={look.id}
                           type="button"
                           onClick={() => setSelectedLook(look)}
-                          className={`relative h-12 rounded-lg overflow-hidden border-2 transition-all ${
+                          className={`relative h-10 sm:h-12 rounded-lg overflow-hidden border-2 transition-all ${
                             selectedLook.id === look.id
                               ? 'border-amber-500 ring-2 ring-pink-500 scale-105 z-10'
                               : 'border-white/60 opacity-70 hover:opacity-100'
@@ -263,26 +263,26 @@ const HeroSection = () => {
                     </div>
                   </div>
 
-                  {/* Right inside: Prominent Interactive 3D Cosmetic Canvas (Unsuppressed!) */}
-                  <div className="w-full sm:w-[52%] h-full relative z-10 flex flex-col items-center justify-center">
-                    <div className="absolute top-2 right-2 z-20 px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-700 dark:text-amber-300 border border-amber-400/40 text-[10px] font-bold backdrop-blur-sm flex items-center gap-1">
+                  {/* Right inside: Prominent Interactive 3D Cosmetic Canvas (Unsuppressed on both Mobile & Desktop!) */}
+                  <div className="w-full sm:w-[52%] h-[240px] sm:h-full relative z-10 flex flex-col items-center justify-center rounded-2xl bg-white/40 dark:bg-slate-900/40 border border-amber-300/40 dark:border-pink-500/30 p-2 sm:p-0">
+                    <div className="absolute top-2 right-2 z-20 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full bg-amber-400/20 text-amber-700 dark:text-amber-300 border border-amber-400/40 text-[9px] sm:text-[10px] font-bold backdrop-blur-sm flex items-center gap-1">
                       <Box className="w-3 h-3 text-amber-500" />
-                      <span>Interactive 3D Stage • Move Cursor</span>
+                      <span>Interactive 3D Stage • Touch / Move</span>
                     </div>
 
-                    <div className="w-full h-[320px] sm:h-[440px] relative">
+                    <div className="w-full h-[180px] sm:h-[440px] relative">
                       <Hero3DCanvas />
                     </div>
 
                     {/* 3D Features Tagline */}
-                    <div className="flex items-center gap-2 mt-1 z-20">
-                      <span className="px-2 py-0.5 rounded-md bg-white/90 dark:bg-slate-800 text-[10px] font-bold text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200 dark:border-slate-700">
+                    <div className="flex items-center justify-center flex-wrap gap-1.5 sm:gap-2 mt-1 z-20">
+                      <span className="px-2 py-0.5 rounded-md bg-white/90 dark:bg-slate-800 text-[9px] sm:text-[10px] font-bold text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200 dark:border-slate-700">
                         ✨ 3D Gold Perfume
                       </span>
-                      <span className="px-2 py-0.5 rounded-md bg-white/90 dark:bg-slate-800 text-[10px] font-bold text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200 dark:border-slate-700">
+                      <span className="px-2 py-0.5 rounded-md bg-white/90 dark:bg-slate-800 text-[9px] sm:text-[10px] font-bold text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200 dark:border-slate-700">
                         💄 Ruby Bullet
                       </span>
-                      <span className="px-2 py-0.5 rounded-md bg-white/90 dark:bg-slate-800 text-[10px] font-bold text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200 dark:border-slate-700">
+                      <span className="px-2 py-0.5 rounded-md bg-white/90 dark:bg-slate-800 text-[9px] sm:text-[10px] font-bold text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200 dark:border-slate-700">
                         💎 Orbiting Pearls
                       </span>
                     </div>
